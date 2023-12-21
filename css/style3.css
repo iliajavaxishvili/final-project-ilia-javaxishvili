@@ -51,3 +51,15 @@ body{
 .Log-in:hover{
     background-color: aqua;
 }
+img {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .TOP-GAMES {
+    margin-top: -55px;
+    margin-left: 90px;
+    font-style: oblique;
+    color: green;
+  }
