@@ -1,0 +1,196 @@
+:root{
+    /* ფერი */
+    --c-dark: hsl(0, 0%, 10%);
+}
+/* საწყისები */
+body, h1, h2, h3, h4, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+button{
+    transition: .3s;
+}
+button:hover{
+    background-color: aqua;
+}
+ul{
+    list-style-type: none;
+}
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* საერთო */
+    /* flex განლაგება */
+    .row
+    {
+        display: flex;
+    }
+    .logo-binder,
+    .d-header .wrapper-fluid,
+    .products header,
+    .d-footer .wrapper-fluid > .row
+    {
+        align-items: center;
+    }
+    .d-header,
+    .products,
+    .d-footer
+    {
+        justify-content: center;
+    }
+    .products .content .row,
+    .d-footer .wrapper-fluid > .row,
+    .d-footer .fast-links
+    {
+        justify-content: space-between;
+    }
+    .products .content .row
+    {
+        flex-wrap: wrap;
+    }
+    .d-header .wrapper-fluid,
+    .products header,
+    .d-footer .wrapper-fluid > .row,
+    .d-footer .fast-links
+    {
+        flex-direction: column;
+    }
+.languages:not(.active) select,
+.products header .title
+{
+    display: none;
+}
+.wrapper-fluid{
+    width: 96%;
+}
+.d-wrapper{
+    width: 74%;
+}
+a{
+    color: var(--c-dark);
+}
+.products img{
+    width: 300px;
+    height: 300px;
+    /*object-fit: cover;*/
+    width: 100%;
+}
+/* კერძო */
+    /* თავსართი */
+    .d-header .logo{
+        width: 120px;
+    }
+    .d-header .languages{
+        margin-left: auto;
+    }
+    /* ძირითადი შემცველობა */
+    .products{
+        margin-top: 50px;
+    }
+    .products header .row{
+        margin-block: 30px;
+    }
+    .products header .category{
+        background-color: hsl(210, 100%, 90%);
+        border-radius: 10px;
+        margin-block: 30px;
+        padding: 30px;
+    }
+    .products header .category .title{
+        margin-block: 20px;
+    }
+    .products header .category .headline{
+        margin-block: 10px;
+    }
+    .products header .content .col{
+        width: 100%;
+    }
+    .products header .row{
+        border-radius: 30px;
+        gap: 20px;
+        padding: 20px;
+    }
+    .products header .row:not(.no-border){
+        border: 1px solid hsl(210, 100%, 50%);
+    }
+    .products header .row li{
+        cursor: pointer;
+        border-radius: 30px;
+        padding: 20px;
+        transition: .3s;
+    }
+    .products header .row:not(.no-border) li{
+        border: 1px solid hsl(210, 100%, 80%);
+    }
+    .products header .row li:hover{
+        background-color: hsl(210, 100%, 50%);
+        border-radius: 30px;
+        color: white;
+        padding: 20px;
+    }
+    .products header .genre{
+        border-bottom: 1px solid hsl(210, 100%, 80%);
+    }
+    .products .content .col{
+        margin-block: 20px;
+    }
+    /* ბოლოსართი */
+    .d-footer{
+        padding-block: 30px;
+    }
+    .d-footer .wrapper-fluid > .row > .col{
+        margin-block: 20px;
+    }
+    .d-footer .fast-links{
+        width: 60%;
+    }
+    .brand img{
+        width: 200px;
+    }
+    .socials .row{
+        gap: 10px;
+        font-size: 1.35rem;
+    } .row2{
+        border: 1px solid black;
+    }
+    .row2, .row3, .row4{
+        border: 1px solid black;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: rgb(223, 247, 255);
+        box-shadow: 5px 5px;
+    }
+    .col2:hover{
+        opacity: 0.5;
+    }
+    .col2{
+        transition: 0.5s;
+    }
+    .d-footer{
+        border: 1px solid lightpink;
+        background-color: lightpink;
+    }
+    .farow{
+        transition: .5s;
+    }
+
+/* მორგებადი განლაგება */
+    /* ლეფტოპი */
+    @media screen and (min-width:992px){
+        .d-header .wrapper-fluid,
+        .d-footer .wrapper-fluid > .row,
+        .d-footer .fast-links
+        {
+            flex-direction: row;
+        }
+        .products .content .col{
+            width: 26%;
+        }
+    }
